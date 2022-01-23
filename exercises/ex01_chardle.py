@@ -15,26 +15,29 @@ print("searching for " + chosen_letter + " in " + chosen_word)
 counter: int = 0
 
 if chosen_letter == chosen_word[0]:
-    print(chosen_letter + " found in index 0")
+    print(chosen_letter + " found at index 0")
     counter = counter + 1
 
 if chosen_letter == chosen_word[1]:
-    print(chosen_letter + " found in index 1")
+    print(chosen_letter + " found at index 1")
     counter = counter + 1
 
 if chosen_letter == chosen_word[2]:
-    print(chosen_letter + " found in index 2")
+    print(chosen_letter + " found at index 2")
     counter = counter + 1
 
 if chosen_letter == chosen_word[3]:
-    print(chosen_letter + " found in index 3")
+    print(chosen_letter + " found at index 3")
     counter = counter + 1
 
 if chosen_letter == chosen_word[4]:
-    print(chosen_letter + " found in index 4")
+    print(chosen_letter + " found at index 4")
     counter = counter + 1
 
 if counter == 0:
     print("No instances of " + chosen_letter + " found in " + chosen_word)
 else:
-    print(str(counter) + " instances of " + chosen_letter + " found in " + chosen_word)
+    if counter == 1: 
+        print(str(counter) + " instance of " + chosen_letter + " found in " + chosen_word)
+    else: 
+        print(str(counter) + " instances of " + chosen_letter + " found in " + chosen_word)
