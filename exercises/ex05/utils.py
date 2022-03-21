@@ -7,7 +7,7 @@ def only_evens(xs: list[int]) -> list[int]:
     """Input is a list of integers and output is a list of only the even numbers in the input list."""
     evens = list()
     for x in xs:
-        if x % 2 == 0 and x > 1:
+        if x % 2 == 0 and x != 0:
             evens.append(x)
     return evens
 

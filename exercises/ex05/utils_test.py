@@ -31,6 +31,12 @@ def test_only_evens_only_zeroes() -> None:
     assert only_evens(xs) == list()  # think about it 
 
 
+def test_only_evens_negatives() -> None:
+    """Test only evens function when the input is a list of negative numbers."""
+    xs: list[int] = [-1, -2, -3, -4, -5]
+    assert only_evens(xs) == [-2, -4]
+
+
 def test_sub_normal() -> None:
     """Test sub function in a normal case."""
     xs: list[int] = [1, 2, 3, 4, 5]

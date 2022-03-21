@@ -52,7 +52,7 @@ def input_guess(length: int) -> str:
 def main() -> None:
     """The entrypoint of the program and main game loop."""
     i = 1
-    secret: str = "salsa"
+    secret: str = "phone"
     win: bool = False
     while i <= 6 and win is False:  # Keep asking for another word until they run out of turns or guess correctly
         print(f"=== Turn {i}/6 ===")
