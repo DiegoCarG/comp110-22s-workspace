@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """Some helpfuly utility functions for working with CSV files."""
 
 from csv import DictReader
@@ -37,3 +38,10 @@ def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
         result[column] = column_values(row_table, column)
 
     return result
+=======
+"""Dictionary related utility functions."""
+
+__author__ = ""
+
+# Define your functions below
+>>>>>>> 5cc95defbcfdc59bbeeded815a0d124ed11747ef
