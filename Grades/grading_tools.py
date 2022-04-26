@@ -19,8 +19,9 @@ class course:
     def __repr__(self) -> dict[str, list[str]]:
         """Represents the values inputed into a couse object as a dictionary."""
         return_dict: dict[str, list[str]] = {}
-        return_dict["Course Code"] = f"{self.course_name}"
-        retur
+        return_dict["Course Code"] = list(f"{self.course_name}")
+        return_dict["Credit Hours"] = list(f"{self.credit_hours}")
+        return_dict["GPA"] = list(f"{self.GPA()}")
 
         return return_dict
 
