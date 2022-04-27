@@ -44,7 +44,7 @@ class course:
             if corresponding_mins[i] <= total:
                 return_list.append(GPA_scale[i])
 
-        return max(return_list)
+        return total
 
 
     
