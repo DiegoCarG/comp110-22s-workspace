@@ -45,6 +45,7 @@ def last(head: Optional[Node]) -> int:
 
 
 def value_at(head: Optional[Node], index: int) -> int:
+    """Returns the nth value in a linked list."""
     if head is None:
         raise IndexError("Index is out of bounds on the list.")
     elif index == 0:
@@ -57,7 +58,7 @@ def value_at(head: Optional[Node], index: int) -> int:
 
 
 def max(head: Node) -> int:
-
+    """Returns the largest value in a linked list."""
     if head is None:
         raise ValueError("Cannot call max with None")
     
@@ -71,5 +72,20 @@ def max(head: Node) -> int:
         return val
 
 
-linked_list = Node(1, Node(10, Node(15, Node(4, None))))
-print(max(linked_list))
+def linkify(list: list[int]) -> Node:
+    """Turns list into linked list."""
+    head = Node(list[0], None)
+    tail = head
+
+    i = 1
+    while i < len(list):
+        tail.next = Node(list[i], None)
+        tail = tail.next
+        i += 1
+    return head
+
+
+def scale
+
+print(linkify([1, 2, 3, 4]))
+
